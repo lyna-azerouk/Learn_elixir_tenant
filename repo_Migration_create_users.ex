@@ -6,8 +6,6 @@ defmodule TriplexUsage.Repo.Migrations.CreateUsers do
       add :name, :string
       add :email, :string
 
-      add :tenant_id, references(:tenants, prefix: "public")
-
       timestamps()
     end
   end
